@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 
 class Bandit:
     def __init__(self, arms=10):  # arms = 슬롯머신 대수
-        self.rates = np.random.rand(arms  # 슬롯머신 각각의 승률 설정(무작위)
+        self.rates = np.random.rand(arms)  # 슬롯머신 각각의 승률 설정(무작위)
 
     def play(self, arm):
         rate = self.rates[arm]
